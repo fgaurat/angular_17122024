@@ -1,0 +1,35 @@
+<form #todoForm="ngForm">
+
+  <mat-form-field>
+    <mat-label>Title</mat-label>
+    <input required matInput name="todoTitle" #todoTitle="ngModel" [(ngModel)]="todoFormModel.title">
+    @if(todoTitle.invalid && todoTitle.touched){
+      <mat-error>Hoooooooooo erreur !!!</mat-error>
+    }
+  </mat-form-field>
+
+  <br>
+  <strong>todoTitle</strong>
+  <br>
+  valid: {{todoTitle.valid}}
+  <br>
+  touched: {{todoTitle.touched}}
+  <br>
+  pristine: {{todoTitle.pristine}}
+  <br>
+  <mat-checkbox name="todoCompleted" [(ngModel)]="todoFormModel.completed">Completed ?</mat-checkbox>
+  <br>
+  <button mat-flat-button [disabled]="todoForm.invalid" color="primary" >Submit</button>
+
+  {{todoFormModel|json}}
+
+  <br>
+  <strong>TodoForm</strong>
+  <br>
+  valid: {{todoForm.valid}}
+  <br>
+  touched: {{todoForm.touched}}
+  <br>
+  pristine: {{todoForm.pristine}}
+  <br>
+</form>
