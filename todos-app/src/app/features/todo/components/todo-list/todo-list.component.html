@@ -1,0 +1,5 @@
+<ul>
+  @for(todo of todos$|async;track todo.id){
+    <li>{{todo.title}}</li>
+  }
+</ul>
