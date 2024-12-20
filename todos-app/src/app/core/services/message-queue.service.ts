@@ -1,5 +1,5 @@
 import { Injectable } from '@angular/core';
-import { Subject } from 'rxjs';
+import { Observable, Subject } from 'rxjs';
 import { Action } from '../models/action';
 @Injectable({
   providedIn: 'root'
@@ -7,6 +7,11 @@ import { Action } from '../models/action';
 export class MessageQueueService {
 
   private bus:Subject<Action> = new Subject<Action>()
+  bus$:Observable<Action> = this.bus.asObservable()
 
-  constructor() { }
+  dispatch(action:Action){
+    console.log(action)
+    this.bus.next(action)
+  }
+
 }

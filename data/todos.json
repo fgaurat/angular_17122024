@@ -19,42 +19,14 @@
       "completed": true
     },
     {
-      "userId": 10,
-      "id": 198,
-      "title": "quis eius est sint explicabo",
-      "completed": true
-    },
-    {
-      "userId": 10,
-      "id": 199,
-      "title": "numquam repellendus a magnam",
-      "completed": true
-    },
-    {
-      "userId": 10,
-      "id": 200,
-      "title": "ipsam aperiam voluptates qui",
-      "completed": false
-    },
-    {
-      "title": "Angular",
+      "title": "fsdfsdsdf",
       "completed": true,
-      "id": 201
+      "id": 198
     },
     {
-      "title": "Angular 2",
-      "completed": true,
-      "id": 202
-    },
-    {
-      "title": "Angular 3",
+      "title": "reactive form",
       "completed": false,
-      "id": 203
-    },
-    {
-      "title": "fsdfsd",
-      "completed": true,
-      "id": 204
+      "id": 199
     }
   ]
 }
