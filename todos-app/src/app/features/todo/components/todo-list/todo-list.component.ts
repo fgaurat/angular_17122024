@@ -33,7 +33,7 @@ export class TodoListComponent implements OnInit{
     //   this.todos$ = this.todoService.getAll()
     // })
 
-    // C'est pas moche !
+    // C'est moins moche !
     this.todos$ =this.todoService.delete(todo).pipe(
       switchMap((data) => this.todoService.getAll())
     )
